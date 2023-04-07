@@ -2,6 +2,11 @@
   // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
   // 기존 특성에 대한 설명을 보려면 가리킵니다.
   // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+
+  //각각의 .java 파일에서 javafx를 사용할려면 start() 함수에서 launch() 라는 메소드를 사용중입니다.
+  // 그러므로 launch.json 이라는 json 형식의 아래 파일처럼 세팅을 해주셔야 해요.
+  // 특히 vmargs 는 중요합니다 이거 없으면 debug 할때 기본 class 없다는 error 뜹니다.
+  // vmArgs : --module-path {javafx sdk 가 깔려있는 lib 폴더를 설정 } --add-modules javafx.controls,javafx.fxml
   "version": "0.2.0",
   "configurations": [
     {
